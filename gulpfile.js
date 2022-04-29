@@ -22,18 +22,19 @@ let paths = {
 };
 
 function styles(){
-    let plugins = {
-        autoprefixer,
-        cssnano
-    }
+    let plugins = [
+        autoprefixer({browsers: ['last 1 version']}),
+        cssnano()
+    ]
     gulp.src(paths.style.src)
     .pipe(sourcemaps.init())
     .pipe(sass())
     .on('error',sass.logError)
+    .pipe(postcss(plugins))
     .pipe(rename({
         suffix: ".min"
     }))
-    .pipe(sourcemaps.write())
+    .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest(paths.style.dest))
     .pipe(browserSync.stream())
 }
@@ -43,7 +44,7 @@ function scripts(){
     .pipe(sourcemaps.init())
     .pipe(concat("app.min.js"))
     .pipe(uglify())
-    .pipe(sourcemaps.write())
+    .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest(paths.script.dest))
     .pipe(browserSync.stream())
 }
