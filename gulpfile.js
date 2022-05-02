@@ -23,13 +23,14 @@ let paths = {
 
 function styles(){
     let plugins = [
-        autoprefixer({browsers: ['last 1 version']}),
+        autoprefixer(),
         cssnano()
     ]
     gulp.src(paths.style.src)
     .pipe(sourcemaps.init())
     .pipe(sass())
     .on('error',sass.logError)
+    .pipe(gulp.dest(paths.style.dest))
     .pipe(postcss(plugins))
     .pipe(rename({
         suffix: ".min"
@@ -61,8 +62,8 @@ function watch(){
     })
 
     gulp.watch("./**/*.php",gulp.series(browserSync.reload));
-    gulp.watch(paths.style.src).on('change',gulp.series(styles,browserSync.reload));
-    gulp.watch(paths.script.src).on('change',gulp.series(scripts,browserSync.reload));
+    gulp.watch("./scss/**/*.scss").on('change',gulp.series(styles,browserSync.reload));
+    gulp.watch("./js/**/*.js").on('change',gulp.series(scripts,browserSync.reload));
 }
 
 exports.styles = styles;

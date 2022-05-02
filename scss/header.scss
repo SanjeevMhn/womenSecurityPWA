@@ -1,0 +1,35 @@
+.primary-nav{
+    padding: 1.15rem 0;
+    .brand{
+        font-size: 2rem;
+    }
+    .side-nav-btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav-list{
+        align-items: center;
+        display: none;
+        .nav-item{
+            padding: 0.5rem 0.75rem;
+            font-size: 1.25rem;
+            font-weight: 700;
+            border-right: 3px solid #000;
+            .nav-link{
+                color: #000;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+   .primary-nav{
+       .side-nav-btn{
+           display: none;
+       }
+       .nav-list{
+           display: flex;
+       }
+   } 
+}

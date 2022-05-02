@@ -1,1 +1,98 @@
 @import "./reset.scss";
+@import "./variables.scss";
+@import "./header.scss";
+@import "./homepage.scss";
+/* css resets */
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+
+/*composition*/
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    padding: 0 1rem; 
+}
+.container-full{
+    padding: 0.75rem 1rem;
+}
+.space-btw{
+    justify-content: space-between;
+}
+.vr-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*utilities*/
+.ft-oleo-script{
+    font-family: 'Oleo Script Swash Caps', cursive;
+}
+.ft-nunito{
+    font-family: 'Nunito', sans-serif;
+}
+.fw-medium{
+    font-weight: 500;
+}
+.fw-semibold{
+    font-weight: 700;
+}
+.fw-bold{
+    font-weight: 800;
+}
+.fw-black{
+    font-weight: 900;
+}
+
+.push-right{
+    margin-left: auto;
+}
+.pos-sticky{
+    position: sticky;
+}
+.btn-reset{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+.header-text{
+    font-size: 1.75rem;
+}
+.para-text{
+    font-size: 1rem;
+}
+.desc-text{
+    font-size: 0.95rem;
+}
+
+@media screen and (min-width: 992px) {
+   .container{
+       padding: 0 8rem;
+   }
+   .container-full{
+       padding: 3.5rem 8rem;
+   } 
+   .header-text{
+       font-size: 2.75rem;
+   }
+   .para-text{
+       font-size: 1.75rem;
+   }
+   .desc-text{
+       font-size: 1.2rem;
+   }
+}
