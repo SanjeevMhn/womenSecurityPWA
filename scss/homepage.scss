@@ -17,7 +17,7 @@
     .features-list{
         padding: 0.5rem 0;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         gap: 0.5rem;
         .list-item{
             display: flex;
@@ -31,7 +31,13 @@
         }
     }
 }
-
+@media screen and (min-width: 768px){
+    .features{
+        .features-list{
+            grid-template-columns: repeat(2,1fr);
+        }
+    }
+}
 @media  screen and (min-width: 992px) {
     .banner{
         .container-full{

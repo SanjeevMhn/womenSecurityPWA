@@ -22,6 +22,9 @@
                <div class="desc-text">
                   24 hrs, support.
                </div>
+               <button class="btn-reset ft-nunito mt-2">
+                  Learn More
+               </button>
             </li>
             <li class="list-item">
                <div class="icon-container">
@@ -32,6 +35,9 @@
                <div class="desc-text">
                   Dedicated personnel on standby.
                </div>
+               <button class="btn-reset ft-nunito mt-2">
+                  Learn More
+               </button>
             </li>
             <li class="list-item">
                <div class="icon-container">
@@ -40,8 +46,11 @@
                   </svg>
                </div>
                <div class="desc-text">
-                  Immediate action within 10 minutes of case filed.
+                  Immediate action.
                </div>
+               <button class="btn-reset ft-nunito mt-2">
+                  Learn More
+               </button>
             </li>
             <li class="list-item">
                <div class="icon-container">
@@ -50,8 +59,11 @@
                   </svg>
                </div>
                <div class="desc-text">
-                  Send distress messages through double click of the power button <br/>(on mobile devices only).
+                  Send distress messages <br/>(on mobile devices only).
                </div>
+               <button class="btn-reset ft-nunito mt-2">
+                  Learn More
+               </button>
             </li>
             <li class="list-item">
                <div class="icon-container">
@@ -63,6 +75,9 @@
                <div class="desc-text">
                   100% privacy.
                </div>
+               <button class="btn-reset ft-nunito mt-2">
+                  Learn More
+               </button>
             </li>
          </ul>
       </div>

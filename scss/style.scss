@@ -78,6 +78,9 @@ a{
 .desc-text{
     font-size: 0.95rem;
 }
+.mt-2{
+    margin-top: 0.7rem;
+}
 
 @media screen and (min-width: 992px) {
    .container{
@@ -94,5 +97,8 @@ a{
    }
    .desc-text{
        font-size: 1.2rem;
+   }
+   .mt-2{
+       margin-top: 2rem;
    }
 }
