@@ -31,6 +31,17 @@
         }
     }
 }
+
+.project-info{
+    .container-full{
+        display: grid;
+        grid-template-columns: 1fr;
+        .side-img{
+            object-fit: cover;
+        }
+    }
+}
+
 @media screen and (min-width: 768px){
     .features{
         .features-list{
@@ -46,6 +57,12 @@
                 padding-top: 5rem;
             }
         } 
+    }
+    .project-info{
+        .container-full{
+            grid-template-columns: repeat(2,1fr);
+            align-items: center;
+        }
     }
     .features{
         .features-list{

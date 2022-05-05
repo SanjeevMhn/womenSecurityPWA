@@ -136,6 +136,14 @@ select {
   text-align: center;
 }
 
+.project-info .container-full {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.project-info .container-full .side-img {
+  object-fit: cover;
+}
+
 @media screen and (min-width: 768px) {
   .features .features-list {
     grid-template-columns: repeat(2, 1fr);
@@ -147,6 +155,11 @@ select {
   }
   .banner .container-full .text-content {
     padding-top: 5rem;
+  }
+
+  .project-info .container-full {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
   }
 
   .features .features-list {
@@ -252,6 +265,14 @@ a {
   margin-top: 0.7rem;
 }
 
+.max-h-30 {
+  max-height: 30rem;
+}
+
+.max-h-50 {
+  max-height: 50rem;
+}
+
 @media screen and (min-width: 992px) {
   .container {
     padding: 0 8rem;
@@ -270,7 +291,7 @@ a {
   }
 
   .desc-text {
-    font-size: 1.2rem;
+    font-size: 1.35rem;
   }
 
   .mt-2 {

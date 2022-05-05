@@ -83,12 +83,13 @@
       </div>
    </div>
    <div class="project-info">
-      <div class="container">
-         <p>
+      <div class="container-full">
+         <p class="ft-nunito desc-text">
             Women and young girls are constantly victim of crimes. Although its sad we cannot prevent every one of those crimes, we can do our part by reporting such crimes.
             If we want to create an environment which is safe for women and girls, we need to act on it now by reporting those crimes so that those who are the victims get justice as quick as possible.
             Abuse of any kind is never to be tolorated, fighting for what is right matters.
          </p>
+         <img src="./assets/women.jpg" alt="" class="side-img max-h-50">
       </div>
    </div>
 

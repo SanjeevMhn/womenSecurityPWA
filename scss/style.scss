@@ -82,7 +82,12 @@ a{
 .mt-2{
     margin-top: 0.7rem;
 }
-
+.max-h-30{
+    max-height: 30rem;
+}
+.max-h-50{
+    max-height: 50rem;
+}
 @media screen and (min-width: 992px) {
    .container{
        padding: 0 8rem;
@@ -97,7 +102,7 @@ a{
        font-size: 1.75rem;
    }
    .desc-text{
-       font-size: 1.2rem;
+       font-size: 1.35rem;
    }
    .mt-2{
        margin-top: 2rem;
