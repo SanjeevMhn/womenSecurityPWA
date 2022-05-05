@@ -74,6 +74,7 @@ select {
 }
 .primary-nav {
   padding: 1.15rem 0;
+  background-color: #fff;
 }
 .primary-nav .brand {
   font-size: 2rem;
@@ -224,6 +225,7 @@ a {
 
 .pos-sticky {
   position: sticky;
+  top: 0;
 }
 
 .btn-reset {
